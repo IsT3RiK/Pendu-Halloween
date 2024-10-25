@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu du Pendu</title>
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval';">
+</head>
+<body>
+  <div id="game-container">
+    <h1>Jeu du Pendu</h1>
+    <canvas id="hangman-canvas" width="200" height="250"></canvas>
+    <p id="word-display">_ _ _ _ _</p>
+    <p id="message"></p>
+    <div id="attempted-letters-container">
+      <h3>Lettres essayées :</h3>
+      <p id="attempted-letters"></p>
+    </div>
+    <button id="restart-button" style="display: none;">Recommencer le jeu</button> <!-- Bouton pour recommencer -->
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
